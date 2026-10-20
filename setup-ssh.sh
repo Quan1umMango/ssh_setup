@@ -12,7 +12,8 @@ case "$OS" in
 		;;
 	MSYS*|MINGW*|CYGWIN)
 		echo "Windows detected, please run setup-ssh.psh1 instead by running this command:"
-		echo "curl -fsSL https://raw.githubusercontent.com/Quan1umMango/ssh_setup/main/setup-ssh.sh -o setup-ssh.sh && bash setup-ssh.ps1"
+		echo "Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Quan1umMango/ssh_setup/main/setup-ssh.ps1" -OutFile setup-ssh.ps1 -UseBasicParsing
+powershell -ExecutionPolicy Bypass -File setup-ssh.ps1"
 		exit 1
 	;;
 	*)
