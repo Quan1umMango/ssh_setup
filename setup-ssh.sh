@@ -11,7 +11,8 @@ case "$OS" in
 	Linux*|Darwin*|FreeBSD*|OpenBSD*|NetBSD*|DragonFly*)
 		;;
 	MSYS*|MINGW*|CYGWIN)
-		echo "Windows detected, please run setup-ssh.psh1 instead by running this command: ..."
+		echo "Windows detected, please run setup-ssh.psh1 instead by running this command:"
+		echo "curl -fsSL https://raw.githubusercontent.com/Quan1umMango/ssh_setup/main/setup-ssh.sh -o setup-ssh.sh && bash setup-ssh.ps1"
 		exit 1
 	;;
 	*)
